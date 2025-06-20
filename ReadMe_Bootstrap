@@ -1,0 +1,50 @@
+Frontend Mentor - Easy – Social Dinner website solution
+This is a custom solution based on the original Bootstrap layout, adapted and enhanced for a unique UX experience inspired by the idea of a social dinner event.
+
+- TABLE OF CONTENT
+
+Overview
+  - The challenge
+  - Links
+
+My process
+  - Built with
+  - What I learned
+
+Author
+
+OVERVIEW 
+
+- The challenge
+
+  Users should be able to:
+    - View a fully responsive layout optimized across all device sizes
+    - Navigate intuitively via a custom-styled Bootstrap navbar and offcanvas menu
+    - Browse image sections through a personalized carousel
+    - Interact with stylized buttons and forms
+    - Enjoy a cohesive visual storytelling experience centered around a community dining concept
+
+- Links
+    - GitHub: https://github.com/Argoneo
+    - Bootstrap: https://getbootstrap.com/
+'
+
+- My process
+    - HTML5 (semantic, accessible structure)
+    - CSS3 with media queries and custom theming
+    - Bootstrap 5.3.5 (customized and overridden)
+    - Bootstrap Icons
+    - JavaScript (for carousel and Bootstrap interactivity)
+    - Custom UI/UX: layout, colors, fonts, carousel, responsiveness and images all q modified from original Bootstrap examples
+
+- What I learned
+    - This project allowed me to:
+        - Start from an existing Bootstrap template and transform it into a completely personalized product
+        - Customize deeply Bootstrap components and override default behaviors
+        - Improve responsive layout structuring with flex/grid and media queries
+        - Create a more engaging UX through background management, custom hover states, mobile-first refinements, and brand-aligned design
+        -Refine visual hierarchy and spacing for both mobile and desktop interfaces
+
+Author
+GitHub – @Argoneo
+
