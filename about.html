@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Wines - Easy</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Slab:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #6D8B61;
+      color: #222;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation bar (coerente con homepage) */
+    #navigationBar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 16px 0;
+      background-color: transparent;
+    }
+
+    #navigationBar h1>a {
+      color: #FFF7D1 !important;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin: 0;
+      text-decoration: none;
+    }
+
+    #navigationBar li>a {
+      color: #FFF7D1 !important;
+      text-decoration: underline !important;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    #navigationBar a:hover {
+      transform: scale(1.1);
+      color: #c0392b;
+    }
+
+    /* Main container */
+    main.container {
+      background-color: #6D8B61;
+      max-width: 1000px;
+      margin: 2rem auto 4rem auto;
+      padding: 2rem 2rem;
+      border-radius: 12px;
+      flex-grow: 1;
+    }
+
+    main h2 {
+      color: #FFF7D1;
+      font-weight: 800;
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .wine-heading {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #FFF7D1;
+      border-bottom: 2px solid #FFF7D1;
+      padding-bottom: 0.5rem;
+    }
+
+    .wine-list {
+      list-style: none;
+      padding-left: 0;
+      line-height: 2;
+      font-size: 1.25rem;
+      color: #FFF;
+      font-family: 'Georgia', serif;
+    }
+
+    .wine-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.8rem;
+      position: relative;
+    }
+
+    .wine-list li::before {
+      content: "•";
+      color: #FFF7D1;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    #productionText {
+      font-size: 1.25rem;
+      color: #FFF7D1;
+      font-style: italic;
+      line-height: 1.8;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 247, 209, 0.4);
+    }
+
+    /* Footer */
+    .findUs {
+      background-color: #99BC85 !important;
+      width: 100;
+      padding-top: 70px;
+      z-index: 4;
+    }
+
+    @media (max-width: 768px) {
+      main.container {
+        padding: 1.5rem 1rem;
+      }
+
+      .wine-heading {
+        text-align: center;
+      }
+
+      #rightsSocialDiv {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+ <header class="mb-auto">
+                <div id="navigationBar">
+                    <!-- Logo displayed on the left -->
+                    <h1 id="logo" class="float-md-start mb-0">
+                      <a href="index.html">Easy</a>
+                    </h1>                    <!-- Navigation bar with mobile offcanvas menu -->
+                    <nav class="navbar navbar-dark bg-transparent navbar-expand-md" id="navigationBar">
+                        <div class="container-fluid">
+                          <h1 id="logo" class="navbar-brand mb-0"></h1>
+                      
+                          <!-- Hamburger menu button for mobile -->
+                          <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          
+                          <!-- Offcanvas menu for mobile devices -->
+                          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+                            <div class="offcanvas-header">
+                              <h1 class="offcanvas-title">Easy</h1>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav text-uppercase">
+                                <li><a class="nav-link active link" href="menu.html">Menu</a></li>
+                                <li><a class="nav-link link" href="wine.html">Wine</a></li>
+                                <li><a class="nav-link link" href="about.html">About</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </header>
+            
+
+  <!-- Main content -->
+ <main class="container">
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="./asset/CoupleAbout.jpg" alt="Our kitchen experience" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6">
+      <h2>Our Story</h2>
+      <p style="font-family: 'Georgia', serif; font-size: 1.25rem; color: #FFF7D1; line-height: 1.8;">
+        After years of working in various renowned restaurants, my partner and I decided to embrace our passion for cooking by bringing it home. We cultivate and nurture our own products, grown lovingly over many years, to create authentic dishes that celebrate the heart of Tuscany.
+      </p>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="./asset/gardenAbout.jpg" alt="Food and wine philosophy" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h2>Our Philosophy</h2>
+      <p style="font-family: 'Georgia', serif; font-size: 1.25rem; color: #FFF7D1; line-height: 1.8;">
+        We believe that food and wine are more than just nourishment — they are an experience, a connection to the land, and a celebration of tradition. Our concept combines simplicity, quality, and sustainability, offering you a genuine taste of Tuscany crafted with care and respect for nature.
+      </p>
+    </div>
+  </div>
+</main>
+
+  <!-- Footer -->
+  <div class="container-fluid findUs">
+    <footer class="px-4 py-2">
+      <div class="row">
+        <!-- Contact info -->
+        <div id="info" class="col-6 col-md-2 mb-3">
+          <h5>How to find us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 infoLi"><a href="#" class="nav-link p-0 text-body-secondary">Hyggeligt street 34</a></li>
+            <li class="nav-item mb-2 infoLi"><a href="#" class="nav-link p-0 text-body-secondary">email: people@gmail.com</a></li>
+            <li class="nav-item mb-2 infoLi"><a href="#" class="nav-link p-0 text-body-secondary">Tel +45 54 58 21 33</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter subscription form -->
+        <div id="divForm" class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+              <button class="btn btn-lg fw-bold text-dark border-0 d-flex align-items-center justify-content-center gap-2 button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social media links and copyright -->
+      <div id="rightsSocialDiv">
+        <div id="social">
+          <ul class="list-unstyled d-flex">
+            <li id="instagram" class="ms-3"><a href="#" class="link-body-emphasis"><i class="bi bi-instagram"></i></a></li>
+            <li id="facebook" class="ms-3"><a href="#" class="link-body-emphasis"><i class="bi bi-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div id="finalText">
+          <p>© 2025 Easy, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+      document.querySelector('#divForm form').addEventListener('submit', function(event) {
+          event.preventDefault(); // previeni il submit di default
+
+          const emailInput = document.querySelector('#newsletter1');
+          const emailValue = emailInput.value.trim();
+
+          if (emailValue !== '') {
+          // se il campo non è vuoto, reindirizza
+          window.location.href = 'subscription.html';
+          } else {
+          // altrimenti mostra un alert o fai qualcosa per avvisare
+          alert('Please enter your email address to subscribe.');
+          emailInput.focus();
+          }
+      });
+  </script>
+</body>
+</html>

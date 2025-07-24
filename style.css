@@ -1,0 +1,317 @@
+/* Landing Page */
+#landingPage {
+    display:flex;
+    flex-direction: column;
+    background-image: url(./socialDining.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    width: 100%;
+}
+#navigationBar h1{
+    color: #FFC !important; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,3);
+    align-self: center;
+}
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color: white !important;
+    color: #FFF7D1 !important; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,3);
+    text-decoration: underline !important;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block; /* Necessario per transform */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Zoom leggero */
+  color: #c0392b; /* Cambia colore (opzionale) */
+}
+
+#mainContainer{
+    flex-direction: column;
+    height: 100vh !important;
+   
+}
+
+#navigationBar{
+    display:flex;
+    justify-content: space-around ;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centro verticale */
+    align-items: center;     /* centro orizzontale */
+    margin-top: 120px !important;
+}
+
+main h1{
+    font-size: 5rem;
+    color: #FFF7D1; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+main>p{
+    font-size: 2rem !important; 
+    color: #FFF7D1;   
+}
+
+#motto{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+/* HERO */
+
+#heroDiv{
+    background-color:#6D8B61 ;
+    margin-top: 0;  
+}
+
+#heroDivBoxP{
+    min-width: 950px;
+    text-align: justify;
+    
+}
+#heroDiv h1{
+    color:black !important; 
+    font-weight: 300;
+    
+}
+
+#heroDiv p{
+    font-size: 1.70rem;
+      color: #FFF7D1;
+      font-style: italic;
+      line-height: 1.8;
+      font-family: 'Georgia', serif;
+}
+
+
+
+.button{
+    background-color: #FFCC00 !important;
+    color: black !important;
+     background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; /* colore più scuro */
+  transform: scale(1.05);     /* leggero zoom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ombra */
+}
+
+/* Carousel */
+
+.carouselSet img {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+  padding-bottom:50px;  
+}
+
+#carouselContainer {
+    background-color: #000; /* nero */
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.carouselSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.carouselSet img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;  
+}
+
+.carousel-inner{
+    background-color: #6D8B61
+}
+/* footer */
+
+.findUs{
+    background-color:#99BC85 !important;
+    width:100;
+    padding-top:70px;
+}
+
+footer{
+    width:auto;  
+}
+
+footer input{
+    min-width:200px !important;  
+}
+
+#divForm{
+    max-width:500px
+}
+
+#divForm p{
+    font-size: 16px;
+    font-weight: 270 !important
+}
+
+h5{
+    font-weight: 800 !important;
+}
+
+#info{
+    min-width:200px   
+}
+
+.infoLI{
+    font-weight: normal !important; /* equivalent to fw-normal */
+}
+
+.row{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+/* Social media links and copyright */
+
+#rightsSocialDiv{
+display:flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: end;
+height:auto !important;
+margin-bottom: 25px;
+margin-top:30px ;
+}
+
+#finalText p{
+    margin-bottom:0px;
+}
+
+#social ul{
+    margin-bottom:0px !important;
+}
+
+#instagram,#facebook{
+    font-size: 1.5rem;
+}
+
+
+/* Icona a sinistra del testo */
+#divForm .btn-subscribe i {
+    margin-right: 8px !important; /* spazio tra icona e testo */
+}
+
+/* Adaptive screen */
+@media (max-height: 500px) {
+  body * {
+    display: none !important;
+  }
+}
+@media (max-width:1000px) {
+    #heroDivBoxP{
+    min-width: 730px;
+}
+} 
+@media (max-width: 922px) {
+      .carouselSet img {
+    display: none;
+  }
+
+  .carouselSet img:first-child {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 770px) {
+
+    .carouselSet {
+        flex-direction: column;
+    }
+
+    .carouselSet img {
+        max-width: 90%;
+    }
+    #landingPage {
+        background-attachment: scroll;
+    }
+
+    #motto{
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        font-size: 20px !important;
+    }
+
+    #heroDivBoxP{
+            min-width: auto;
+            max-width: 368px;
+    }
+
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        gap:20px
+    }
+
+    #divForm{
+        margin-bottom: 0 !important;
+    }
+    #info{
+        align-items: start !important;
+    }
+
+     .infoLI{
+        font-size: 16px!important;
+    }
+
+        .link{
+        font-size: 40px !important;
+    }
+
+    nav a{
+    text-decoration: none !important;
+}
+    
+}
+ @media (max-width: 450px) {
+
+    body{
+        min-width:100%!important
+    }
+
+    #divForm{
+        min-width:auto !important
+    }
+
+ }
+
+ 
