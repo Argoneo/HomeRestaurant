@@ -230,11 +230,7 @@ margin-top:30px ;
 }
 
 /* Adaptive screen */
-@media (max-height: 500px) {
-  body * {
-    display: none !important;
-  }
-}
+
 @media (max-width:1000px) {
     #heroDivBoxP{
     min-width: 730px;
