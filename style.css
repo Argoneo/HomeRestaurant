@@ -39,7 +39,7 @@ nav a{
 
 #mainContainer{
     flex-direction: column;
-    height: 100vh !important;
+    min-height: 100svh !important;
    
 }
 
